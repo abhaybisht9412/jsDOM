@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+
+    </head>
+    <body>
+        
+        <p id="cs">counter</p>
+        <p class="go">strike</p>
+
+        <!-- accessing elements by id  -->
+        <script>
+            var a = document.getElementById("cs").innerHTML="valorant";
+            // document.write(a); 
+        </script>
+         <!-- accessing elements by className  -->
+        <script>
+            var b = document . getElementsByClassName("go")[0].innerHTML="worst";
+            //  document.write(b);
+        </script>
+
+        <!-- access elements by tag name  -->
+        
+        <script>
+            var tag = document.getElementsByTagName("p");
+            // document.write(tag); 
+        </script>
+
+        <!-- access first elements  -->
+        <script>
+            var q = document.querySelector('p').innerHTML;
+            document.write(q);
+        </script>
+
+    </body>
+</html>
