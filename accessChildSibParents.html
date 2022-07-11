@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>DOM</title>
+
+</head>
+<body>
+    <p id="cs">counter</p>
+    <p class="go">strike</p>
+    <p class="go">global</p>
+    <p class="go">offensive</p>
+    
+    <ul><li>iem</li>
+        <li>cologne</li>
+        <li>major</li></ul>
+
+    <script>
+        var child=document.body.children;
+        console.log(child); 
+    </script>
+    
+    <!-- adding new element and text within element in the body section explicitly -->
+    <script>
+        var newPara = document.createElement("p"); //creating a paragraph
+        var newContent = document.createTextNode(" New major content . ");
+        newPara.appendChild(newContent);
+        console.log(newPara);
+        //appending new para to the body
+
+        document.body.appendChild(newPara);
+
+        // first child and last child 
+
+        var list = document.querySelector("ul");
+        console.log(list);
+        
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+        
+
+    </script>
+
+</body>
+
+</html>
